@@ -41,7 +41,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
         
-      - run : git --work-tree build add --all
+      - run : git --work-tree dist add --all
         shell: bash
         
       - name: Commit Message
