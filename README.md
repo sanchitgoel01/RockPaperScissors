@@ -1,4 +1,6 @@
-# rock-paper-scissors
+# Rock Paper Scissors
+
+My first vue project ever! It's a simple single component rock paper scissors game against an NPC.
 
 ## Project setup
 ```
