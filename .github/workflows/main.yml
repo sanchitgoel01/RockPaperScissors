@@ -19,6 +19,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+      # Skip action if commit msg contains [ci skip]
+      - uses: mstachniuk/ci-skip@v1
+        with:
+          fail-fast: true
 
       # Runs a single command using the runners shell
       - name: Install NPM
