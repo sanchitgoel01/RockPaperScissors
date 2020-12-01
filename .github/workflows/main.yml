@@ -33,6 +33,7 @@ jobs:
       - name: NPM Build
         env:
           CI: false
+          NODE_ENV: production
         run: npm run build
         shell: bash
       
